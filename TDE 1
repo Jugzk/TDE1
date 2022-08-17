@@ -1,0 +1,63 @@
+//exercicio 1
+numero = int(input("Digite um número aleatório:"))
+sucessor = numero + 1
+antecessor = numero - 1
+print("o seu sucessor é:" + str(sucessor))
+print("o seu antecessor é:" + str(antecessor))
+
+//exercicio 2
+ano_de_nascimento = int(input("Digite o ano que você nasceu:"))
+idade = 2022 - ano_de_nascimento
+futura_idade = idade + 10
+print("sua idade em 2032 será:" + str(futura_idade))
+
+//exercicio 3
+salario = int(input("digite seu salario"))
+quantos_recebe = salario/1212
+print( "você recebe esta quantidade de salários minimos:" + str(quantos_recebe))
+
+//exercicio 4
+qual_o_diametro = int(input("digite o diamatro do seu circulo:"))
+area = 1/4*3,14*qual_o_diametro*qual_o_diametro
+print("a area do seu circulo é:" + str(area))
+
+//exercicio 5
+valor_do_produto = float(input("digite o valor do produto: "))
+parcelas_3 = valor_do_produto + float(0.05*valor_do_produto)
+parcelas_2 = valor_do_produto
+parcelas_1 = valor_do_produto - float(0.05*valor_do_produto)
+print("você pagará à vista: R$" + str(parcelas_1))
+print("você pagará em 2 x: R$" + str(parcelas_2))
+print("você pagará em 3 x: R$" + str(parcelas_3))
+
+//exercicio 6
+co = float(input("qual o valor do cateto oposto: "))
+ca = float(input("qual o valor do cateto adjacente:"))
+hipotenusa = (ca ** 2 + co ** 2) ** (1/2)
+print("O valor da hipotenusa é: {}".format(hipotenusa))
+
+//exercicio 7
+dias = int(input("digite que dia é:"))
+horas = int(input("digite que horas são:"))
+minutos = int(input("digite quantos minutos tem:"))
+segundos = int(input("digite quantos seguntos tem:"))
+# Um minuto = 60 segundos
+# Uma hora = 3600 (60 * 60) segundos
+# Um dia = 24 horas = 24 * 3600 segundos
+total_em_segundos = dias * 24 * 3600 + horas * 3600 + minutos * 60 + segundos
+total_em_minutos = horas * 24 * 3600 + horas * 3600 + minutos
+print("Convertido em segundos é igual à: " + str(total_em_segundos))
+print("Convertido em segundos é igual à: " + str(total_em_minutos))
+
+
+//exercicio 8
+raio = int(input("digite o raio do tanque de cilíndro de combustivel: "))
+altura = int(input("digite a altura do tanque de cilíndro de combustivel: "))
+area_base = (3.14 * (raio**2))
+area_lateral = (2 * 3.14 * raio * altura)
+area = (area_base + area_lateral)
+litros = area / 3
+quantidade_de_latas = litros / 5
+custo = quantidade_de_latas * 100
+print("você vai gastar: R$" + str(custo))
+print("você vai gastar esta quantidade de latas: " + str(quantidade_de_latas))
