@@ -1,9 +1,9 @@
 //exercicio 1
-numero = int(input("Digite um número aleatório:"))
+numero = float(input("Digite um número aleatório:"))
 sucessor = numero + 1
 antecessor = numero - 1
-print("o seu sucessor é:" + str(sucessor))
-print("o seu antecessor é:" + str(antecessor))
+print("o seu sucessor é:" + float(sucessor))
+print("o seu antecessor é:" + float(antecessor))
 
 //exercicio 2
 ano_de_nascimento = int(input("Digite o ano que você nasceu:"))
@@ -12,14 +12,14 @@ futura_idade = idade + 10
 print("sua idade em 2032 será:" + str(futura_idade))
 
 //exercicio 3
-salario = int(input("digite seu salario"))
+salario = float(input("digite seu salario"))
 quantos_recebe = salario/1212
-print( "você recebe esta quantidade de salários minimos:" + str(quantos_recebe))
+print( "você recebe esta quantidade de salários minimos:" + float(quantos_recebe))
 
 //exercicio 4
-qual_o_diametro = int(input("digite o diamatro do seu circulo:"))
+qual_o_diametro = float(input("digite o diamatro do seu circulo:"))
 area = 1/4*3,14*qual_o_diametro*qual_o_diametro
-print("a area do seu circulo é:" + str(area))
+print("a area do seu circulo é:" + float(area))
 
 //exercicio 5
 valor_do_produto = float(input("digite o valor do produto: "))
@@ -33,8 +33,8 @@ print("você pagará em 3 x: R$" + str(parcelas_3))
 //exercicio 6
 co = float(input("qual o valor do cateto oposto: "))
 ca = float(input("qual o valor do cateto adjacente:"))
-hipotenusa = (ca ** 2 + co ** 2) ** (1/2)
-print("O valor da hipotenusa é: {}".format(hipotenusa))
+hipotenusa = (ca * 2 + co * 2) * (1/2)
+print("O valor da hipotenusa é:" + str(hipotenusa))
 
 //exercicio 7
 dias = int(input("digite que dia é:"))
